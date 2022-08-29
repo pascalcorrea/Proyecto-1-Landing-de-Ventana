@@ -40,7 +40,6 @@ header nav {
     margin-right: 250px;
 }
 
-/* MAIN */
 
 nav a {
     font-weight: 600;
@@ -51,7 +50,9 @@ nav a:hover {
     color: darkgray;
 }
 
-main {
+/* MAIN */
+
+main.jumbotron {
     display: flex;
     height: 680px;
     background-color: #eeddd2;
@@ -60,19 +61,19 @@ main {
     padding: 10px;
 }
 
-main nav {
+nav.text-form {
     display: inline;
     margin-left: 250px;
     justify-content: space-between;
 }
 
-main nav h1 {
+nav.text-form h1 {
     font-size: 80px;
     margin-top: 100px;
     margin-bottom: 40px;
 }
 
-main nav h2 {
+nav.text-form h2 {
     font-size: 30px;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -170,7 +171,7 @@ div.slider {
 
 .text-container {
     width: 100%;
-    height: 120px;
+    height: 200px;
     background-color: rgb(238, 234, 234);
     display: flex;
     justify-content: center;
@@ -189,7 +190,6 @@ div.cards-container {
 }
 
 div.product-card {
-    /* width: 400px; */
     display: column;
     justify-content: center;
     align-items: center;
@@ -232,4 +232,67 @@ div.product-card {
     margin-top: 0;
     margin-bottom: 0;
     color: black;
+}
+
+div.espacio {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(238, 234, 234);
+}
+
+/* ADICIONALES */
+
+div.main-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+
+div.texto-container {
+    width: 50%;
+    height: 100%;
+    background-color: #eeddd2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Trebuchet MS';
+}
+
+.texto-container h1 {
+    margin-left: 150px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.texto-container h2 {
+    margin-left: 150px;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.texto-container li {
+    margin-left: 150px;
+    font-size: 20px;
+    margin-bottom: 4px;
+    list-style: none;
+}
+
+
+div.foto-container img {
+    width: 100%;
+    height: 600px;
+}
+
+.contenedor-contacto {
+    margin-left: 150px;
+    height: 80px;
+    width: 200px;
+    margin-top: 50px;
+}
+
+input.boton {
+    width: 600px;
+    height: 60px;
+    border-radius: 8px;
 }
