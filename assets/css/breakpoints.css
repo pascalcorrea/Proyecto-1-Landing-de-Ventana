@@ -1,41 +1,104 @@
-/*referencias https://jairogarciarincon.com/clase/introduccion-a-las-aplicaciones-web-con-html5-css3-y-javascript/diseno-responsive-con-media-queries*/
+@media (max-width: 1250px) { 
 
-/* Pantilla 1: Diseño responsive a partir del diseño más grande (el de escritorio) Como bootstrap
-
-Pantallas muy grandes  (desktops de más de 1200px de ancho)
-No hace falta media-query porque será nuestro diseño por defecto
-
-//Pantallas grandes (desktops de menos de 1200px) */
-/* @media (max-width: 1199.98px) { 
-
- } */
-
-/*Pantallas medianas (tablets de menos de 992px)*/
-/* @media (max-width: 991.98px) { 
- } */
-
-/*Pantallas pequeñas (móviles en landscape de menos de 768px)*/
-/* @media (max-width: 767.98px) { 
-
- } */
-
-/*Pantallas muy pequeñas (móviles en portrait de menos de 576px)* */
-/* @media (max-width: 575.98px) { 
-
-} */
-/* 
-Pantilla 2: Diseño responsive a partir del diseño más pequeño (el de móvil)
-//Pantallas muy pequeñas  (móviles en portrait de menos de 576px)
-//No hace falta media-query porque será nuestro diseño por defecto
-
-//Pantallas pequeñas (móviles en landscape de más de 576px) */
-/* @media (min-width: 768px) {
-  header {
+  main.jumbotron {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #eeddd2;
+    margin: 0;
+}
+
+div.text-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 40px;
+}
+
+div.slider-container {
+  display: none;
+}
+
+nav.text-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+  margin: 0;
+}
+
+nav.text-form p {
+  margin: 0;
+  text-align: center;
+}
+
+nav.text-form h1 {
+  text-align: center;
+}
+
+div.login {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+}
+
+
+  section.adicionales {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eeddd2;
   }
 
-  nav {
-    padding: 10px 0px;
+  div.text-boton-container {
+    width: 80%;
   }
-} */
+
+  div.foto-container {
+    width: 100%;
+}
+  
+}
+
+@media screen and (max-width:1000px) {
+  nav.links {
+    display: none;
+}
+.container-logo {   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #eeddd2;
+}
+div.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+
+div.text-boton {
+  text-align: center;
+}
+
+}
+
+@media screen and (max-width:900px){
+  .pie-pagina .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+  }
+}
 
