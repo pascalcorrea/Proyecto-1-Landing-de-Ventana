@@ -1,0 +1,19 @@
+@media screen and (max-width:1000px) {
+
+    nav.links {
+        display: none;
+    }
+    .container-logo {   
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background-color: #eeddd2;
+    }
+    
+    a.logo {
+      display: flex;
+      align-items: center;
+      margin-left: 0;
+    }
+}

@@ -32,8 +32,8 @@ nav.links {
 a.logo {
     display: flex;
     align-items: center;
-    width: 600px;
     margin-left: 130px;
+    width: 250px;
 }
 
 .logo img {
@@ -61,7 +61,7 @@ nav a:hover {
   .form-container {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    width: 800px;
+    width: 80%;
     padding: 20px;
   }
   .logo {
