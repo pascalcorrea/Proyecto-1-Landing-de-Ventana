@@ -81,7 +81,8 @@ div.login {
   width: 100%;
   background-color: #eeddd2;
 }
-div.logo {
+
+a.logo {
   display: flex;
   align-items: center;
   margin-left: 0;
@@ -111,4 +112,42 @@ div.text-boton {
     justify-content: space-between;
   }
 }
+
+@media (max-width: 450px) {
+  nav.text-form h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.text-boton h2 {
+  font-size: 300%;
+  margin: 20px;
+  text-align: center;
+}
+
+
+.text-boton li {
+  font-size: 100%;
+  margin: 2px;
+  list-style: none;
+}
+
+input.boton {
+  width: 300px;
+  height: 60px;
+  border-radius: 8px;
+  margin: 20px;
+  font-weight: bold;
+}
+
+div.foto-container img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+}
+
 
