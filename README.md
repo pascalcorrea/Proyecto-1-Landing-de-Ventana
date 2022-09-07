@@ -1,8 +1,8 @@
-<!-- INFORMACION DEL PROYECTO  -->
+INFORMACION DEL PROYECTO 
 
 Este proyecto es el primer prototipo para la pagina de eCommerce de mi emprendimiento Vapz Store. 
 
-<!-- DESARROLLO DEL PROYECTO -->
+DESARROLLO DEL PROYECTO
 
 HTML
 
@@ -16,7 +16,7 @@ estiloslogin.css, pagina estilos de login.html
 breakpoints.css, pagina break points de index.html
 breakpointslogin.css, pagina break points de login.html
 
-<!-- LINKS -->
+LINKS
 
 Link de la pagina, https://pascalcorrea.github.io/
 
