@@ -71,7 +71,8 @@ div.login {
 }
 
 @media screen and (max-width:1000px) {
-  nav.links {
+
+nav.links {
     display: none;
 }
 .container-logo {   
@@ -95,6 +96,7 @@ div.text-boton {
 }
 
 @media screen and (max-width:900px){
+  
   .pie-pagina .grupo-1{
       width: 90%;
       grid-template-columns: repeat(1, 1fr);
