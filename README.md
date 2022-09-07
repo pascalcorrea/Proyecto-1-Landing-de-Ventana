@@ -23,4 +23,3 @@ Link de la pagina, https://pascalcorrea.github.io/
 Link del proyecto en github, https://github.com/pascalcorrea/pascalcorrea.github.io.git
 
 
-
