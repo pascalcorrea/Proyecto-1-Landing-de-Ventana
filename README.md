@@ -22,5 +22,9 @@ Link de la pagina, https://pascalcorrea.github.io/
 
 Link del proyecto en github, https://github.com/pascalcorrea/pascalcorrea.github.io.git
 
+PROTOTIPO PROYECTO
+
+![prototipo-vapzstore](https://user-images.githubusercontent.com/98128852/188976093-4d44abd1-3276-4348-a552-383f54fed981.png)
+
 
 
