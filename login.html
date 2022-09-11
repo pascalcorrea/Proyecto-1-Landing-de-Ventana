@@ -35,53 +35,73 @@
 
     <!-- LOGIN -->
 
-    <div class="login">
+    <section class="login">
       <div class="form-container">
         <h1 class="title">Crear Cuenta</h1>
 
-        <form action="/" class="form">
+        <form class="form">
           <div>
             <label for="name" class="label">Nombre</label>
             <input
+              name="Nombre"
               type="text"
-              id="name"
+              id="caja-texto-nombre"
               placeholder="Nombre"
               class="input input-name"
+              required
             />
 
-              <label for="name" class="label">Apellidos</label>
-              <input
-                type="text"
-                id="name"
-                placeholder="Apellidos"
-                class="input input-apellidos"
-              />
+            <label for="name" class="label">Apellidos</label>
+            <input
+              name="Apellidos"
+              type="text"
+              id="caja-texto-apellido"
+              placeholder="Apellidos"
+              class="input input-apellidos"
+              required
+            />
 
             <label for="email" class="label">Email</label>
             <input
+              name="Email"
               type="text"
-              id="email"
+              id="caja-texto-email"
               placeholder="email@ejemplo.com"
               class="input input-email"
+              required
+            />
+
+            <label for="number" class="label">Telefono</label>
+            <input
+              name="Numero"
+              type="number"
+              id="caja-texto-telefono"
+              placeholder="9XXXXXXXX"
+              class="input input-number"
+              required
             />
 
             <label for="password" class="label">Contraseña</label>
             <input
+              name="Contraseña"
               type="password"
-              id="password"
+              id="caja-texto-contraseña"
               placeholder="*********"
               class="input input-password"
+              required
             />
           </div>
 
           <input
+            id="button"
             type="submit"
             value="Crear"
             class="primary-button login-button"
+            required
           />
         </form>
       </div>
-    </div>
+    </section>
 
     <!-- FOOTER -->
 
@@ -112,6 +132,49 @@
           <small>&copy; 2022 <b>Slee Dw</b> - Todos los derechos Reservados</small>
       </div>
   </footer>
-  
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+    crossorigin="anonymous">
+  </script>
+ 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+ 
+ <script type="text/javascript">
+
+  /*Definir variables nombre, telefono, email y comentario*/
+  /*Obtener los elementos html que contienen estos datos*/
+
+  $('#contactForm').on('submit', function (event) {
+    event.preventDefault(); // prevent reload
+
+    var cajaNombre = $('#caja-texto-nombre').val();
+    var cajaComentario = $('#caja-texto-apellido').val();
+    var cajaEmail = $('#caja-texto-email').val();
+    var cajaTelefono = $('#caja-texto-telefono').val();
+    var cajaEmail = $('#caja-texto-contraseña').val();
+
+    alert(cajaNombre, cajaTelefono, cajaEmail, cajaComentario);
+
+    var formData = new FormData(this);
+    formData.append('service_id', 'service_3ovfx7i');
+    formData.append('template_id', 'vapzstore-template');
+    formData.append('user_id', '0cwP3lmSkSPgGPpK5');
+
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+      type: 'POST',
+      data: formData,
+      contentType: false, // auto-detection
+      processData: false // no need to parse formData to string
+    }).done(function () {
+      alert('Your mail is sent!');
+    }).fail(function (error) {
+      alert('Oops... ' + JSON.stringify(error));
+    });
+
+  });
+</script>
+
 </body>
 </html>
