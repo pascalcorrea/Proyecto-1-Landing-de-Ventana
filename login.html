@@ -150,12 +150,12 @@
     event.preventDefault(); // prevent reload
 
     var cajaNombre = $('#caja-texto-nombre').val();
-    var cajaComentario = $('#caja-texto-apellido').val();
+    var cajaApellido = $('#caja-texto-apellido').val();
     var cajaEmail = $('#caja-texto-email').val();
     var cajaTelefono = $('#caja-texto-telefono').val();
-    var cajaEmail = $('#caja-texto-contraseña').val();
+    var cajaContraseña = $('#caja-texto-contraseña').val();
 
-    alert(cajaNombre, cajaTelefono, cajaEmail, cajaComentario);
+    alert(cajaNombre, cajaApellido, cajaEmail, cajaTelefono, cajaContraseña);
 
     var formData = new FormData(this);
     formData.append('service_id', 'service_3ovfx7i');
