@@ -22,7 +22,7 @@ breakpointslogin.css, pagina break points de login.html
 
 LINKS
 
-Link de la pagina, https://pascalcorrea.github.io/
+Link de la pagina, https://pascalcorrea.github.io/vapzstore.github.io/login.html?
 
 Link del proyecto en github, https://github.com/pascalcorrea/pascalcorrea.github.io.git
 
